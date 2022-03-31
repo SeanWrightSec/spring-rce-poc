@@ -9,6 +9,7 @@ The purpose of this is to be able to research the Remote Code Execution vulnerab
 1. Run the script `build.sh` to build the app and Docker image
 2. Start the webapp by running the script `run-webapp.sh` (hit Ctrl + C to stop the webapp)
 3. With the webapp running, run the srcipt `run-poc.sh` to run the exploit PoC
+4. Also with the webapp running, you can run the script `run-poc-rest.sh` to run the exploit PoC against the REST interface
 
 ### build.sh
 
@@ -21,9 +22,9 @@ This script will build both the source code as well as Docker image. By default 
 This will use the `Dockerfile-jetty` Docker file to build the webapp within a Jetty app server.
 
 
-### run-poc.sh
+### run-poc.sh & run-poc-rest.sh
 
-The script `run-poc.sh` does allow for a customer command to be passed as an argument:
+The scripts `run-poc.sh` and `run-poc-rest.sh` allow for a customer command to be passed as an argument:
 
 ```./run-poc.sh "<command-goes-here>"```
 
