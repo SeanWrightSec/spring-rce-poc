@@ -1,0 +1,2 @@
+FROM jetty:9.4-jre11
+COPY ./deploy/spring-rce-poc.war /var/lib/jetty/webapps/

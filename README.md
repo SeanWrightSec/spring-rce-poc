@@ -10,6 +10,17 @@ The purpose of this is to be able to research the Remote Code Execution vulnerab
 2. Start the webapp by running the script `run-webapp.sh` (hit Ctrl + C to stop the webapp)
 3. With the webapp running, run the srcipt `run-poc.sh` to run the exploit PoC
 
+### build.sh
+
+This script will build both the source code as well as Docker image. By default it will use the default `Dockerfile` to build the Docker image. You can specify a custom Dockerfile to use by providing the file name as an argument to the script. For example:
+
+```
+./build.sh Dockerfile-jetty
+```
+
+This will use the `Dockerfile-jetty` Docker file to build the webapp within a Jetty app server.
+
+
 ### run-poc.sh
 
 The script `run-poc.sh` does allow for a customer command to be passed as an argument:

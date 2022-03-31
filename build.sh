@@ -1,5 +1,7 @@
 #!/bin/bash
 
+dockerfile=""
+
 build() {
     mkdir -p deploy
     cd ./spring-rce-poc-code
@@ -7,7 +9,7 @@ build() {
     cp ./target/spring-rce-poc-0.0.1-SNAPSHOT.war ../deploy/spring-rce-poc.war
     cd ..
 
-    docker image build -t spring-poc/poc-rce ./
+    docker image build -f $dockerfile -t spring-poc/poc-rce ./
 }
 
 clean() {
@@ -22,6 +24,13 @@ case $1 in
         clean
         ;;
     *)
+        if [ $# -eq 0 ]
+            then
+                dockerfile="Dockerfile"
+            else
+                dockerfile=$1
+        fi
+
         build
         ;;
 esac
