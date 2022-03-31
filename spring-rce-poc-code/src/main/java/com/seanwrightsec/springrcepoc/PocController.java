@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class PocController {
 
-	@RequestMapping("/poc")
+	@RequestMapping(value = "/poc")
 	public String greeting(PocModel model) {
 		return "poc";
 	}
