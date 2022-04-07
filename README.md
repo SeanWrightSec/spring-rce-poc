@@ -1,4 +1,4 @@
-# Spring RCE Proof of Concept
+# Spring RCE (CVE-2022-22965) Proof of Concept
 
 ***This is only for research purposes and MUST NO be used for malicous purposes***
 
@@ -38,3 +38,10 @@ The following sources have been helpful in developing this:
 * Rapid 7 blog - [Spring4Shell: Zero-Day Vulnerability in Spring Framework](https://www.rapid7.com/blog/post/2022/03/30/spring4shell-zero-day-vulnerability-in-spring-framework/) - helped with creating the PoC
 * Spring - [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/) - helped to provide information for creating a MVC app from scratch
 * Retrospected GitHub - [spring-rce-poc](https://github.com/Retrospected/spring-rce-poc) - helped provide an improved exploit script as well as Docker images
+
+## Links
+
+* Spring blog post announcing the vulnerability - [https://spring.io/blog/2022/03/31/spring-framework-rce-early-announcement](https://spring.io/blog/2022/03/31/spring-framework-rce-early-announcement)
+* [CVE-2022-22965](https://tanzu.vmware.com/security/cve-2022-22965) (VMWare)
+* [CVE-2022-22965](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22965) (Mitre)
+* [CVE-2022-22965](https://nvd.nist.gov/vuln/detail/CVE-2022-22965) (NVD)
